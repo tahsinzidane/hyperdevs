@@ -130,10 +130,11 @@ nav ul li a:hover::after {
 
 
 /* animation on scroll */
-#about{
+#about,
+#service{
   animation: appeare linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 30%;
 }
 @keyframes appeare {
   from{
@@ -146,3 +147,17 @@ nav ul li a:hover::after {
   }
 }
 /* animation on scroll */
+
+/* css for service details */
+.service-details{
+  list-style: none;
+  
+}
+
+.service-details li{
+  
+}
+.service-details li i{
+  font-size: 50px;
+  color: var(--txt-color);
+}
