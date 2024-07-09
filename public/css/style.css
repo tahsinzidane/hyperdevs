@@ -169,3 +169,11 @@ nav ul li a:hover::after {
   padding: 0.5rem 0.5rem;
   border: 0px solid;
 }
+
+.whatsapp-number{
+  list-style: none;
+}
+.whatsapp-number li{
+  display: inline;
+  cursor: pointer;
+}

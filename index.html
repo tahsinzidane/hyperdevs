@@ -207,30 +207,6 @@
     <!-- about us section end -->
 
 
-    <!-- popup msg box section start here -->
-    <div class="container bg-light rounded mt-5" id="popupBox" style="display: none;">
-        <div class="row">
-            <div class="col-xxl-11 col-xl-11 col-lg-11 col-md-12 col-sm-12 col-xm-12  text-center rounded">
-                <h3>share your idea with us </h3>
-
-                <!-- msg us from -->
-                <form id="whatsappFrom">
-                    <label for="msgbox">message</label> <br>
-                    <textarea name="" id="message" rows="4" cols="50" placeholder="write message here"></textarea> <br>
-                    <button type="submit" class="rounded service-btn m-1">send message</button>
-                </form>
-                <p id="generatedLink"></p>
-            </div>
-
-            <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12 col-xm-12 rounded">
-                <!-- closs btn -->
-                <button class="btn float-end" id="clossPopUp" onclick="clossBox()">
-                    <i class="ri-close-large-line"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- popup msg box section start here -->
 
 
     <!-- scetion service -->
@@ -244,7 +220,7 @@
                 </div>
                 <!-- service details  -->
                 <div class="row mt-3">
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xm-12  text-center">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xm-12 ">
                         <ul class="service-details">
                             <li><i class="ri-code-box-line"></i></li>
                             <li>
@@ -256,8 +232,16 @@
                             </li>
                             <li>
                                 <button class="rounded service-btn">get service</button>
-                                <button class="btn border service-btn" id="openPopUpBox" onclick="openBox()">or share
+                                <button class="btn border service-btn" id="openPopUpBox">or share
                                     your idea</button>
+                            </li>
+                            <li>
+                                <!-- whatsapp  number  -->
+                                <ul class="whatsapp-number mt-3" id="copyBtn" style="display: none;">
+                                    <li><i class="ri-whatsapp-line fs-4"></i></li>
+                                    <li id="copyNumber">+880 1401-612266</li>
+                                </ul>
+                                <!-- whatsapp  number  -->
                             </li>
                         </ul>
                     </div>

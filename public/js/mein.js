@@ -14,36 +14,35 @@ document.addEventListener("DOMContentLoaded", function () {
 // slider for hero section end here
 
 
-// Popup message box script
-let openPopUpBox = document.getElementById('openPopUpBox');
-let closePopUp = document.getElementById('closePopUp'); // Corrected typo: clossPopUp to closePopUp
-let popUpBox = document.getElementById('popupBox');
+// script copy whatsapp number
 
-// Function to open popup box
-function openBox() {
-    popUpBox.style.display = 'block';
-}
+// display number
+document.getElementById('openPopUpBox').addEventListener('click', function(){
+    const copyBtn = document.getElementById('copyBtn');
+    if (copyBtn.style.display === 'none') {
+        copyBtn.style.display = 'block';
+    }else{
+        copyBtn.style.display = 'none'
+    }
+})
 
-// Function to close popup box
-function closeBox() {
-    popUpBox.style.display = 'none';
-}
 
-// WhatsApp message sending script
-document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+// copy number
+document.addEventListener('DOMContentLoaded', function() {
+    let copyButton = document.getElementById('copyBtn');
+    let copyStatus = document.getElementById('copyNumber');
 
-    const phoneNumber = '+8801401612266'; // WhatsApp number for sending message
-
-    const message = document.getElementById('message').value;
-    const encodedMessage = encodeURIComponent(message);
-
-    let whatsappLink = `https://wa.me/${phoneNumber}`;
-
-    if (message) {
-        whatsappLink += `?text=${encodedMessage}`;
+    // Function to copy a specific word to clipboard
+    function copyWord() {
+        const wordToCopy = '+880 1401-612266'; 
+        navigator.clipboard.writeText(wordToCopy).then(function() {
+            copyNumber.innerText = 'Word copied to clipboard!';
+        }, function(err) {
+            copyNumber.innerText = 'Failed to copy word.';
+            console.error('Could not copy text: ', err);
+        });
     }
 
-    // Display the generated WhatsApp link
-    document.getElementById('generatedLink').innerHTML = `Click this link to send message: <a href='${whatsappLink}' target='_blank'>Send Message</a>`;
+    // Event listener for copy button
+    copyButton.addEventListener('click', copyWord);
 });
