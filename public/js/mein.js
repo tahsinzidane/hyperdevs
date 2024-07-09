@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
 // script copy whatsapp number
 
 // display number
-document.getElementById('openPopUpBox').addEventListener('click', function(){
+document.getElementById('openPopUpBox').addEventListener('click', function () {
     const copyBtn = document.getElementById('copy-list');
     if (copyBtn.style.display === 'none') {
         copyBtn.style.display = 'block';
-    }else{
+    } else {
         copyBtn.style.display = 'none'
     }
 })
@@ -29,17 +29,17 @@ document.getElementById('openPopUpBox').addEventListener('click', function(){
 
 // copy number
 
-// copy number section for ovi
-document.addEventListener('DOMContentLoaded', function() {
+// copy number function for ovi
+document.addEventListener('DOMContentLoaded', function () {
     let copyButton = document.getElementById('copyBtnOvi');
     let copyStatus = document.getElementById('copyNumberOvi');
 
     // Function to copy a specific word to clipboard
     function copyWord() {
-        const wordToCopy = '+880 1401-612266'; 
-        navigator.clipboard.writeText(wordToCopy).then(function() {
+        const wordToCopy = '+880 1401-612266';
+        navigator.clipboard.writeText(wordToCopy).then(function () {
             copyNumberOvi.innerText = 'number copied to clipboard!';
-        }, function(err) {
+        }, function (err) {
             copyNumberOvi.innerText = 'Failed to copy word.';
             console.error('Could not copy text: ', err);
         });
@@ -49,17 +49,17 @@ document.addEventListener('DOMContentLoaded', function() {
     copyButton.addEventListener('click', copyWord);
 });
 
-// copy number section for tahsin
-document.addEventListener('DOMContentLoaded', function() {
+// copy number function for tahsin
+document.addEventListener('DOMContentLoaded', function () {
     let copyButton = document.getElementById('copyBtnTsn');
     let copyStatus = document.getElementById('copyNumberTsn');
 
     // Function to copy a specific word to clipboard
     function copyWord() {
-        const wordToCopy = '+880 1610-300268'; 
-        navigator.clipboard.writeText(wordToCopy).then(function() {
+        const wordToCopy = '+880 1610-300268';
+        navigator.clipboard.writeText(wordToCopy).then(function () {
             copyNumberTsn.innerText = 'number copied to clipboard!';
-        }, function(err) {
+        }, function (err) {
             copyNumberTsn.innerText = 'Failed to copy word.';
             console.error('Could not copy text: ', err);
         });
