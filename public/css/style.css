@@ -154,10 +154,18 @@ nav ul li a:hover::after {
   
 }
 
-.service-details li{
+/* .service-details li{
   
-}
+} */
 .service-details li i{
   font-size: 50px;
   color: var(--txt-color);
+}
+
+/* service btn css */
+.service-btn{
+  background-color: var(--txt-color);
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border: 0px solid;
 }
