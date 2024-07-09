@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function copyWord() {
         const wordToCopy = '+880 1401-612266'; 
         navigator.clipboard.writeText(wordToCopy).then(function() {
-            copyNumber.innerText = 'Word copied to clipboard!';
+            copyNumber.innerText = 'number copied to clipboard!';
         }, function(err) {
             copyNumber.innerText = 'Failed to copy word.';
             console.error('Could not copy text: ', err);
