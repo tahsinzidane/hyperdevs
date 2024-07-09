@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // display number
 document.getElementById('openPopUpBox').addEventListener('click', function(){
-    const copyBtn = document.getElementById('copyBtn');
+    const copyBtn = document.getElementById('copy-list');
     if (copyBtn.style.display === 'none') {
         copyBtn.style.display = 'block';
     }else{
@@ -28,17 +28,39 @@ document.getElementById('openPopUpBox').addEventListener('click', function(){
 
 
 // copy number
+
+// copy number section for ovi
 document.addEventListener('DOMContentLoaded', function() {
-    let copyButton = document.getElementById('copyBtn');
-    let copyStatus = document.getElementById('copyNumber');
+    let copyButton = document.getElementById('copyBtnOvi');
+    let copyStatus = document.getElementById('copyNumberOvi');
 
     // Function to copy a specific word to clipboard
     function copyWord() {
         const wordToCopy = '+880 1401-612266'; 
         navigator.clipboard.writeText(wordToCopy).then(function() {
-            copyNumber.innerText = 'number copied to clipboard!';
+            copyNumberOvi.innerText = 'number copied to clipboard!';
         }, function(err) {
-            copyNumber.innerText = 'Failed to copy word.';
+            copyNumberOvi.innerText = 'Failed to copy word.';
+            console.error('Could not copy text: ', err);
+        });
+    }
+
+    // Event listener for copy button
+    copyButton.addEventListener('click', copyWord);
+});
+
+// copy number section for tahsin
+document.addEventListener('DOMContentLoaded', function() {
+    let copyButton = document.getElementById('copyBtnTsn');
+    let copyStatus = document.getElementById('copyNumberTsn');
+
+    // Function to copy a specific word to clipboard
+    function copyWord() {
+        const wordToCopy = '+880 1610-300268'; 
+        navigator.clipboard.writeText(wordToCopy).then(function() {
+            copyNumberTsn.innerText = 'number copied to clipboard!';
+        }, function(err) {
+            copyNumberTsn.innerText = 'Failed to copy word.';
             console.error('Could not copy text: ', err);
         });
     }
