@@ -177,3 +177,8 @@ nav ul li a:hover::after {
   display: inline;
   cursor: pointer;
 }
+
+/* css for removing under line */
+.ancor{
+  text-decoration: none;
+}
