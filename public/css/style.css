@@ -200,7 +200,7 @@ nav ul li a:hover::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: blueviolet;
-  font-size: 50px;
+  color: rgb(178, 106, 106);
+  font-size: 60px;
   cursor: pointer;;
 }

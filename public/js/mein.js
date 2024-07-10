@@ -27,7 +27,7 @@ document.getElementById('openPopUpBox').addEventListener('click', function () {
 })
 
 
-// copy number
+// copy number function start
 
 // copy number function for ovi
 document.addEventListener('DOMContentLoaded', function () {
@@ -68,3 +68,25 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listener for copy button
     copyButton.addEventListener('click', copyWord);
 });
+// copy number function end
+
+
+// mouse over functionality script start
+let projectBoxes = document.querySelectorAll('.projectBox');
+
+projectBoxes.forEach(function (projectBox) {
+    projectBox.addEventListener('mouseover', function () {
+        let eyeIcon = projectBox.querySelector('.eyeIcon');
+        if (eyeIcon) {
+            eyeIcon.style.display = 'block';
+        }
+    });
+
+    projectBox.addEventListener('mouseout', function () {
+        let eyeIcon = projectBox.querySelector('.eyeIcon');
+        if (eyeIcon) {
+            eyeIcon.style.display = 'none';
+        }
+    });
+});
+// mouse over functionality script start
