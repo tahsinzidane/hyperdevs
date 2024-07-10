@@ -131,7 +131,8 @@ nav ul li a:hover::after {
 
 /* animation on scroll */
 #about,
-#service{
+#service,
+#portfolios{
   animation: appeare linear;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
@@ -181,4 +182,25 @@ nav ul li a:hover::after {
 /* css for removing under line */
 .ancor{
   text-decoration: none;
+}
+
+
+/* css for project section */
+.projects-area{
+  position: relative;
+  display: inline-block;
+}
+
+.projects-area img{
+  display: block;
+}
+
+.projects-area i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: blueviolet;
+  font-size: 50px;
+  cursor: pointer;;
 }
