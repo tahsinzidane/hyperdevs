@@ -44,15 +44,19 @@ a {
   0% {
     transform: perspective(400px) rotateX(0deg) rotateY(0deg);
   }
+
   25% {
     transform: perspective(400px) rotateX(180deg) rotateY(0deg);
   }
+
   50% {
     transform: perspective(400px) rotateX(180deg) rotateY(180deg);
   }
+
   75% {
     transform: perspective(400px) rotateX(0deg) rotateY(180deg);
   }
+
   100% {
     transform: perspective(400px) rotateX(0deg) rotateY(0deg);
   }
@@ -83,14 +87,18 @@ nav ul li a::after {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: var(--txt-color); /* Change as per your design */
+  background-color: var(--txt-color);
+  /* Change as per your design */
   transition: transform 0.3s ease;
-  transform: scaleX(0); /* Initially no width */
+  transform: scaleX(0);
+  /* Initially no width */
 }
 
 nav ul li a:hover::after {
-  transform: scaleX(1); /* Full width on hover */
+  transform: scaleX(1);
+  /* Full width on hover */
 }
+
 /* navbar animation end */
 
 /* css for slider */
@@ -132,75 +140,79 @@ nav ul li a:hover::after {
 /* animation on scroll */
 #about,
 #service,
-#portfolios{
+#team-members {
   animation: appeare linear;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
+
 @keyframes appeare {
-  from{
+  from {
     opacity: 0;
     scale: 0.9;
   }
-  to{
+
+  to {
     opacity: 1;
     scale: 1;
   }
 }
+
 /* animation on scroll */
 
 /* css for service details */
-.service-details{
+.service-details {
   list-style: none;
-  
+
 }
 
 /* .service-details li{
   
 } */
-.service-details li i{
+.service-details li i {
   font-size: 50px;
   color: var(--txt-color);
 }
 
 /* service btn css */
-.service-btn{
+.service-btn {
   background-color: var(--txt-color);
   color: white;
   padding: 0.5rem 0.5rem;
   border: 0px solid;
 }
 
-.whatsapp-number{
+.whatsapp-number {
   list-style: none;
 }
-.whatsapp-number li{
+
+.whatsapp-number li {
   display: inline;
   cursor: pointer;
 }
 
 /* css for removing under line */
-.ancor{
+.ancor {
   text-decoration: none;
 }
 
 
-/* css for project section */
-.projects-area{
-  position: relative;
-  display: inline-block;
+/* css for tem members secton */
+.card-box {
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.projects-area img{
-  display: block;
+.details-cont-for-tsn{
+  animation: besic-anim ease-in-out1;
 }
 
-.projects-area i{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(178, 106, 106);
-  font-size: 60px;
-  cursor: pointer;;
+@keyframes besic-anim {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }

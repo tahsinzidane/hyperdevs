@@ -1,3 +1,6 @@
+console.log('hello imuuuuuuu');
+// alert('still inder development')
+
 // script for slider on hero section
 document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".slide");
@@ -71,22 +74,18 @@ document.addEventListener('DOMContentLoaded', function () {
 // copy number function end
 
 
-// mouse over functionality script start
-let projectBoxes = document.querySelectorAll('.projectBox');
+// script for see more details
 
-projectBoxes.forEach(function (projectBox) {
-    projectBox.addEventListener('mouseover', function () {
-        let eyeIcon = projectBox.querySelector('.eyeIcon');
-        if (eyeIcon) {
-            eyeIcon.style.display = 'block';
-        }
-    });
+// see more details script for tahsin
+let clossDetailsForTsn = document.querySelector('.closs-details-for-tsn'),
+    openDetailsForTsn = document.querySelector('.open-details-for-tsn'),
+    detailsContForTsn = document.querySelector('.details-cont-for-tsn');
+openDetailsForTsn.addEventListener('click', function(){
+    // alert('worked')
+    detailsContForTsn.style.display = 'block';
+})
+clossDetailsForTsn.addEventListener('click', function(){
+    detailsContForTsn.style.display = 'none';
+}) 
 
-    projectBox.addEventListener('mouseout', function () {
-        let eyeIcon = projectBox.querySelector('.eyeIcon');
-        if (eyeIcon) {
-            eyeIcon.style.display = 'none';
-        }
-    });
-});
-// mouse over functionality script start
+
