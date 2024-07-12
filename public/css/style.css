@@ -237,3 +237,12 @@ nav ul li a:hover::after {
   background-color: aqua;
   border-radius: 50px;
 }
+
+/* footer for css */
+#footer ul{
+  list-style: none;
+}
+
+#footer ul li a{
+  text-decoration: none;
+}
