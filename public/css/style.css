@@ -236,7 +236,7 @@ nav ul li a:hover::after {
 }
 
 /* center img  */
-.person {
+/* .person {
   position: relative;
 }
 
@@ -246,3 +246,7 @@ nav ul li a:hover::after {
     left: 50%;      
   }
 }
+
+@media (max-width: 580px) {
+  
+} */
