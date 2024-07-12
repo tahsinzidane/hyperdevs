@@ -9,7 +9,7 @@
   --txt-color: navy;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -138,13 +138,19 @@ nav ul li a:hover::after {
   opacity: 1;
 }
 
+.s-btn i{
+  color: #333;
+  font-size: 60px;
+}
+
 /* css for slider */
 
 
 /* animation on scroll */
 #about,
 #service,
-#team-members {
+#team-members,
+#members-details {
   position: relative;
   animation: appeare linear;
   animation-timeline: view();
@@ -212,21 +218,22 @@ nav ul li a:hover::after {
 
 
 
-.media-links{
+.media-links {
   list-style: none;
 }
-.media-links li{
+
+.media-links li {
   display: inline-block;
   font-size: 30px;
   margin: 10px 10px;
   padding: 10px 10px;
 }
-.media-links li a{
+
+.media-links li a {
   text-decoration: none;
 }
 
-.media-links li:hover{
+.media-links li:hover {
   background-color: aqua;
   border-radius: 50px;
 }
-

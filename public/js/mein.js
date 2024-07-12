@@ -80,12 +80,51 @@ document.addEventListener('DOMContentLoaded', function () {
 let clossDetailsForTsn = document.querySelector('.closs-details-for-tsn'),
     openDetailsForTsn = document.querySelector('.open-details-for-tsn'),
     detailsContForTsn = document.querySelector('.details-cont-for-tsn');
-openDetailsForTsn.addEventListener('click', function(){
+
+// see more details script for ovi
+let clossDetailsForOvi = document.querySelector('.closs-details-for-ovi'),
+    openDetailsForOvi = document.querySelector('.open-details-for-ovi'),
+    detailsContForOvi = document.querySelector('.details-cont-for-ovi');
+
+// opening closing function for tahsin
+openDetailsForTsn.addEventListener('click', function () {
     // alert('worked')
     detailsContForTsn.style.display = 'block';
 })
-clossDetailsForTsn.addEventListener('click', function(){
+clossDetailsForTsn.addEventListener('click', function () {
     detailsContForTsn.style.display = 'none';
-}) 
+})
 
 
+openDetailsForOvi.addEventListener('click', function () {
+    // alert('worked')
+    detailsContForOvi.style.display = 'block';
+})
+clossDetailsForOvi.addEventListener('click', function () {
+    detailsContForOvi.style.display = 'none';
+})
+
+function chekingTF() {
+    detailsContForOvi.style.display = 'block';
+    detailsContForTsn.style.display = 'block';
+}
+
+openDetailsForOvi.addEventListener('click', function(){
+    if (detailsContForOvi.style.display === 'block') {
+        // alert('closs the running pop-up box first')
+        detailsContForOvi.style.display = 'block'
+        detailsContForTsn.style.display = 'none'
+    } else {
+        // detailsContForOvi.style.display = 'block'
+        return null;
+    }
+})
+
+openDetailsForTsn.addEventListener('click', function(){
+    if (detailsContForTsn.style.display === 'block') {
+        detailsContForTsn.style.display = 'block';
+        detailsContForOvi.style.display = 'none';
+    } else {
+        return null;
+    }
+})
