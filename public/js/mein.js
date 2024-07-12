@@ -86,7 +86,7 @@ let clossDetailsForOvi = document.querySelector('.closs-details-for-ovi'),
     openDetailsForOvi = document.querySelector('.open-details-for-ovi'),
     detailsContForOvi = document.querySelector('.details-cont-for-ovi');
 
-// opening closing function for tahsin
+// opening closing function 
 openDetailsForTsn.addEventListener('click', function () {
     // alert('worked')
     detailsContForTsn.style.display = 'block';
@@ -99,15 +99,13 @@ clossDetailsForTsn.addEventListener('click', function () {
 openDetailsForOvi.addEventListener('click', function () {
     // alert('worked')
     detailsContForOvi.style.display = 'block';
+    
 })
 clossDetailsForOvi.addEventListener('click', function () {
     detailsContForOvi.style.display = 'none';
 })
+// opening closing function 
 
-function chekingTF() {
-    detailsContForOvi.style.display = 'block';
-    detailsContForTsn.style.display = 'block';
-}
 
 openDetailsForOvi.addEventListener('click', function(){
     if (detailsContForOvi.style.display === 'block') {
