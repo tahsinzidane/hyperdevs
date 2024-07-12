@@ -216,3 +216,33 @@ nav ul li a:hover::after {
     opacity: 1;
   }
 }
+
+.media-links{
+  list-style: none;
+}
+.media-links li{
+  display: inline-block;
+  font-size: 30px;
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+.media-links li a{
+  text-decoration: none;
+}
+
+.media-links li:hover{
+  background-color: aqua;
+  border-radius: 50px;
+}
+
+/* center img  */
+.person {
+  position: relative;
+}
+
+/* Media query for screens under 1341px */
+@media (max-width: 1341px) {
+  .person {
+    left: 50%;      
+  }
+}
