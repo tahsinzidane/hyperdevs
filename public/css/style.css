@@ -138,7 +138,7 @@ nav ul li a:hover::after {
   opacity: 1;
 }
 
-.s-btn i{
+.s-btn i {
   color: #333;
   font-size: 60px;
 }
@@ -150,7 +150,8 @@ nav ul li a:hover::after {
 #about,
 #service,
 #team-members,
-#members-details {
+#members-details,
+#customer-experience {
   position: relative;
   animation: appeare linear;
   animation-timeline: view();
@@ -216,8 +217,6 @@ nav ul li a:hover::after {
 }
 
 
-
-
 .media-links {
   list-style: none;
 }
@@ -238,11 +237,33 @@ nav ul li a:hover::after {
   border-radius: 50px;
 }
 
-/* footer for css */
-#footer ul{
+
+/* css for user rating section */
+#customer-experience img {
+  border-radius: 50%;
+  ;
+}
+
+#customer-experience ul {
   list-style: none;
 }
 
-#footer ul li a{
+#customer-experience ul li {
+  display: inline;
+  margin: 8px 8px;
+  font-size: 20px;
+  cursor: pointer;
+  ;
+}
+
+
+
+
+/* footer for css */
+#footer ul {
+  list-style: none;
+}
+
+#footer ul li a {
   text-decoration: none;
 }

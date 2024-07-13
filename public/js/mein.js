@@ -99,7 +99,7 @@ clossDetailsForTsn.addEventListener('click', function () {
 openDetailsForOvi.addEventListener('click', function () {
     // alert('worked')
     detailsContForOvi.style.display = 'block';
-    
+
 })
 clossDetailsForOvi.addEventListener('click', function () {
     detailsContForOvi.style.display = 'none';
@@ -107,7 +107,7 @@ clossDetailsForOvi.addEventListener('click', function () {
 // opening closing function 
 
 
-openDetailsForOvi.addEventListener('click', function(){
+openDetailsForOvi.addEventListener('click', function () {
     if (detailsContForOvi.style.display === 'block') {
         // alert('closs the running pop-up box first')
         detailsContForOvi.style.display = 'block'
@@ -118,7 +118,7 @@ openDetailsForOvi.addEventListener('click', function(){
     }
 })
 
-openDetailsForTsn.addEventListener('click', function(){
+openDetailsForTsn.addEventListener('click', function () {
     if (detailsContForTsn.style.display === 'block') {
         detailsContForTsn.style.display = 'block';
         detailsContForOvi.style.display = 'none';
@@ -126,3 +126,12 @@ openDetailsForTsn.addEventListener('click', function(){
         return null;
     }
 })
+
+
+// function for who like the comment 
+function userLikeCount(id) {
+    let loveIcon = document.getElementById(id);
+    let loveCount = parseInt(loveIcon.innerHTML);
+    loveIcon.innerHTML = ++loveCount;
+}
+
