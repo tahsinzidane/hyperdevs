@@ -86,23 +86,66 @@ let clossDetailsForOvi = document.querySelector('.closs-details-for-ovi'),
     openDetailsForOvi = document.querySelector('.open-details-for-ovi'),
     detailsContForOvi = document.querySelector('.details-cont-for-ovi');
 
+// calling the element for making popup effect
+let nav = document.getElementById('nav'),
+    hero = document.getElementById('hero'),
+    about = document.getElementById('about'),
+    service = document.getElementById('service'),
+    footer = document.getElementById('footer');
+// teamMembers = document.getElementById('team-members');
+
+// calling element for making more aesthetic
+let tahisn = document.getElementById('tahsin'),
+    ovi = document.getElementById('ovi')
+
+// taking all the element in arrey
+let element = [nav, hero, about, service, footer];
+
+
+
 // opening closing function 
 openDetailsForTsn.addEventListener('click', function () {
     // alert('worked')
     detailsContForTsn.style.display = 'block';
+
+    element.forEach(element => {
+        element.style.display = 'none';
+    })
+    // adding class on tahsin
+    tahisn.classList.add('tsn-after-click')
 })
 clossDetailsForTsn.addEventListener('click', function () {
     detailsContForTsn.style.display = 'none';
+
+    element.forEach(element => {
+        element.style.display = 'block';
+    })
+    // removing class on tahsin
+    tahisn.classList.remove('tsn-after-click')
 })
 
-
+// opening clossing for ovi
 openDetailsForOvi.addEventListener('click', function () {
     // alert('worked')
     detailsContForOvi.style.display = 'block';
 
+    element.forEach(element => {
+        element.style.display = 'none';
+    })
+
+      // adding class on tahsin
+      ovi.classList.add('ovi-after-click')
+
 })
 clossDetailsForOvi.addEventListener('click', function () {
     detailsContForOvi.style.display = 'none';
+
+    element.forEach(element => {
+        element.style.display = 'block';
+    })
+
+      // removing class on ovi
+      ovi.classList.remove('ovi-after-click')
 })
 // opening closing function 
 

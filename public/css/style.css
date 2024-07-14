@@ -32,15 +32,16 @@ a {
 }
 
 .heading,
-.logo{
+.logo {
   font-weight: 900;
   color: var(--txt-color);
   font-family: "Rubik", sans-serif;
 }
 
-div h1{
+div h1 {
   color: var(--txt-color);
-  font-family: "Rubik", sans-serif;;
+  font-family: "Rubik", sans-serif;
+  ;
 }
 
 /* logo animation */
@@ -253,4 +254,13 @@ nav ul li a:hover::after {
 
 #footer ul li a {
   text-decoration: none;
+}
+
+
+/* css after javascript */
+.tsn-after-click,
+.ovi-after-click {
+  -webkit-box-shadow: 9px -1px 74px 18px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px -1px 74px 18px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px -1px 74px 18px rgba(0, 0, 0, 0.75);
 }
