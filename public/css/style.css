@@ -11,6 +11,7 @@
 
 body {
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 /* besic css */
@@ -31,9 +32,15 @@ a {
 }
 
 .heading,
-.logo {
+.logo{
   font-weight: 900;
   color: var(--txt-color);
+  font-family: "Rubik", sans-serif;
+}
+
+div h1{
+  color: var(--txt-color);
+  font-family: "Rubik", sans-serif;;
 }
 
 /* logo animation */
@@ -236,26 +243,6 @@ nav ul li a:hover::after {
   background-color: aqua;
   border-radius: 50px;
 }
-
-
-/* css for user rating section */
-#customer-experience img {
-  border-radius: 50%;
-  ;
-}
-
-#customer-experience ul {
-  list-style: none;
-}
-
-#customer-experience ul li {
-  display: inline;
-  margin: 8px 8px;
-  font-size: 20px;
-  cursor: pointer;
-  ;
-}
-
 
 
 

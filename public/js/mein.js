@@ -128,10 +128,3 @@ openDetailsForTsn.addEventListener('click', function () {
 })
 
 
-// function for who like the comment 
-function userLikeCount(id) {
-    let loveIcon = document.getElementById(id);
-    let loveCount = parseInt(loveIcon.innerHTML);
-    loveIcon.innerHTML = ++loveCount;
-}
-
