@@ -1,23 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* variables */
+:root {
+    --primary-bg: rgb(104, 104, 235);
+    --secondary-bg: rgb(237, 237, 86);
+    --txt-color: navy;
+}
+
 @keyframes pulse {
     0% {
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
-        0 0 20px rgba(255, 255, 255, 0.25);
+            0 0 20px rgba(255, 255, 255, 0.25);
     }
 
     50% {
         text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
-        0 0 30px rgba(255, 255, 255, 0.25);
+            0 0 30px rgba(255, 255, 255, 0.25);
     }
 
     100% {
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
-        0 0 20px rgba(255, 255, 255, 0.25);
+            0 0 20px rgba(255, 255, 255, 0.25);
     }
 }
 
 html {
-    background: linear-gradient(to bottom, #000000, #434343);
+    /* background: linear-gradient(to bottom, #000000, #434343); */
 }
+
 body {
     transition: 1s all ease;
 }
@@ -25,7 +35,7 @@ body {
 /* Center the content */
 .container {
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -34,7 +44,7 @@ body {
 .header {
     width: 50%;
     margin: 0 auto;
-    background: url(./assets/img/univ.gif) no-repeat center center fixed; 
+    background: url(./assets/img/univ.gif) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,11 +54,12 @@ body {
     padding: 20px;
     border-radius: 5px;
 }
+
 .header h1 {
     color: orange;
     font-family: sans-serif;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
-    0 0 20px rgba(255, 255, 255, 0.25);
+        0 0 20px rgba(255, 255, 255, 0.25);
     animation: pulse 1s infinite;
 }
 
@@ -57,7 +68,7 @@ body {
     color: white;
     font-size: 20px;
     font-style: italic;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 /* Styling for the map container */
@@ -79,22 +90,30 @@ body {
 .address-info {
     text-align: center;
     padding: 10px;
+    /* color: black; */
 }
+
+.address-info a i {
+    color: black;
+}
+
+
 .address-info h4 {
     animation: pulse 1s infinite;
     font-family: sans-serif;
-    color: white;
+    color: rgb(26, 21, 21);
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
-    0 0 20px rgba(255, 255, 255, 0.25);
+        0 0 20px rgba(255, 255, 255, 0.25);
     font-size: 20px;
     margin-top: -5px;
 }
+
 .address-info p {
     color: lightblue;
     font-family: sans-serif;
     font-weight: bold;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
-    0 0 20px rgba(255, 255, 255, 0.25);
+        0 0 20px rgba(255, 255, 255, 0.25);
 }
 
 /* Styling for the contact form */
@@ -111,7 +130,8 @@ form {
     opacity: 0.8;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -124,27 +144,31 @@ form input, form textarea {
 }
 
 form .foryo {
-    width: 50%;
+    width: 100%;
 }
+
 form .foryo2 {
-    width: 60%;
+    width: 100%;
 }
+
 form .foryo3 {
-    width: 70%;
+    width: 100%;
 }
+
 form .foryo4 {
-    width: 80%;
+    width: 100%;
 }
+
 .contact-form .foryoo {
     animation: pulse 1s infinite;
     font-family: sans-serif;
     color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
-    0 0 20px rgba(255, 255, 255, 0.25);
+        0 0 20px rgba(255, 255, 255, 0.25);
 }
 
 .animated-border {
-    background-color: #4CAF50; 
+    background-color: #4CAF50;
     border: 2px solid #4CAF50;
     color: white;
     padding: 10px 15px;
@@ -171,15 +195,15 @@ form h2 {
     font-family: sans-serif;
     color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
-    0 0 20px rgba(255, 255, 255, 0.25);
+        0 0 20px rgba(255, 255, 255, 0.25);
 }
 
- .wp {
+.wp {
     color: white;
     cursor: pointer;
     font-size: 40px;
- }
+}
 
- * {
-    font-family: "Bona Nova SC", serif !important;
- }
+* {
+    font-family: "Roboto", sans-serif !important;
+}
