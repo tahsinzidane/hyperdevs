@@ -1,0 +1,25 @@
+ /* Media query for mobile screens */
+@media (max-width: 767px) {
+    /* body {
+        background: url(./bg-mb.jpeg) no-repeat center center fixed;
+    } */
+    .header {
+        width: 90%;
+    }
+    .container {
+        flex-direction: column; /* Stack elements vertically on mobile */
+    }
+    .contact-info {
+        border-bottom: 5px dotted white;
+    }
+
+    .map-container {
+        order: 2; /* Change the order to place map below the form */
+        margin-top: 30px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .map {
+        width: 80%;
+    }
+}
