@@ -12,7 +12,7 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto", sans-serif;
-  }
+}
 
 /* besic css */
 body,
@@ -110,4 +110,19 @@ nav ul li a:hover::after {
     100% {
         transform: perspective(400px) rotateX(0deg) rotateY(0deg);
     }
+}
+
+/* footer for css */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #ffc107;
+}
+
+.footer a:hover {
+    color: #ffffff;
 }

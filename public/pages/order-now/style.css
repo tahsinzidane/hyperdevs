@@ -24,9 +24,6 @@
     }
 }
 
-html {
-    /* background: linear-gradient(to bottom, #000000, #434343); */
-}
 
 body {
     transition: 1s all ease;
@@ -207,3 +204,5 @@ form h2 {
 * {
     font-family: "Roboto", sans-serif !important;
 }
+
+
